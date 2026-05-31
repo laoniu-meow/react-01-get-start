@@ -7,6 +7,8 @@ Before building applications with React.js, you’ll need to set up a proper dev
 
 [x] [Install node & npm](#install-node.js-and-npm)
 
+[x] [Install IDE: VS Code](#install-ide:-vs-code)
+
 ---
 
 ## Install Node.js and npm
@@ -26,8 +28,8 @@ Example: The teams required to use 24.16.0
 
 ```bash
 # 1. Verify Node and Npm version
-node -v             # Output: v24.15.0 - current installed version
-npm -v              # Output: 11.12.1  - current installed version
+node -v                 # Output: v24.15.0 - current installed version
+npm -v                  # Output: 11.12.1  - current installed version
 
 # Your environment did not show the version, which means Node is not yet installed
 # 2. Download and install NVM (Only for one-time)
@@ -37,13 +39,13 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 source ~/.bashrc
 
 # 4. List version
-nvm ls-remote       # You should be find v24.16.0
+nvm ls-remote           # You should be find v24.16.0
 
 # 5. Install a Specific Node.js Version
 nvm install 24.16.0
 ```
 ```
-Output after execute the nvm install:
+<h3>Output after execute the nvm install:</h3>
 Downloading and installing node v24.16.0...
 Downloading https://nodejs.org/dist/v24.16.0/node-v24.16.0-linux-x64.tar.xz...
 ######################################################################################################################################################## 100.0%
@@ -53,13 +55,22 @@ Now using node v24.16.0 (npm v11.13.0)
 ```
 ```bash
 # 6. Use a Specific Node.js Version
-nvm use 24
+nvm use 24              #   Output: Now using node v24.16.0 (npm v11.13.0)
 
 # 7. Verify the active version
-node -v
-npm -v
+node -v                 # v24.16.0
+npm -v                  # 11.13.0
 
 # 8. Set a Specific Version as Default
-nvm alias default 24
+nvm alias default 24    # Output: default -> 24 (-> v24.16.0)
 ```
 ---
+
+## Install IDE: VS Code
+
+### What is IDE?
+An IDE (Integrated Development Environment) is software that combines key developer tools—like a code editor, compiler, debugger, and version control—into one place. It makes writing, testing, and managing code faster and easier. Think of it as a single workspace for all your coding needs
+
+### Why use VS Code?
+You should use Visual Studio Code (VS Code) because it’s free, lightweight, cross‑platform, and highly customizable, with built‑in Git integration, debugging tools, and a massive extension marketplace that makes it ideal for both beginners and experienced developers. It’s currently the most popular editor worldwide, especially for web development and frameworks
+
