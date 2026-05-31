@@ -42,6 +42,7 @@ nvm ls-remote       # You should be find v24.16.0
 # 5. Install a Specific Node.js Version
 nvm install 24.16.0
 ```
+```
 Output after execute the nvm install:
 Downloading and installing node v24.16.0...
 Downloading https://nodejs.org/dist/v24.16.0/node-v24.16.0-linux-x64.tar.xz...
@@ -50,22 +51,15 @@ Computing checksum with sha256sum
 Checksums matched!
 Now using node v24.16.0 (npm v11.13.0)
 ```
-
-```
-
----
-
-
-
-
-
-
-
+```bash
 # 6. Use a Specific Node.js Version
-nvm use 18
+nvm use 24
 
 # 7. Verify the active version
 node -v
+npm -v
 
 # 8. Set a Specific Version as Default
-nvm alias default 18
+nvm alias default 24
+```
+---
