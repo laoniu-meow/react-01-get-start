@@ -73,10 +73,7 @@ wsl -l -v
 # * Ubuntu    Running         2
 
 # 7. Enter to WSL environment
-wsl                 
-
-# Output - will be enter and show this directory: 
-<linuxuser>@<compunter-name>:/mnt/c/Users/<windows-user-name>$
+wsl
 ```
 
 ---
