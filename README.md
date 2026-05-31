@@ -12,8 +12,11 @@ React requires Node.js to run. Installing Node.js also gives you access to npm (
 
 ### What is Node.js?
 Node.js is an open-source, cross-platform runtime environment that allows you to run JavaScript code outside of a web browser
+[Read more about Node.js](https://nodejs.org/learn/getting-started/introduction-to-nodejs)
 
-[Read more about Node.js](https://selleo.com/blog/what-is-node-js-used-for)
+### What is npm?
+It stands for Node Package Manager (npm), and it is the official package manager and code registry for Node.js.When you install Node.js, npm is automatically installed on your computer. It is the world's largest software registry, containing over two million free blocks of code that developers share with each other.
+[Read more about npm](https://docs.npmjs.com/about-npm)
 
 ```bash
 # Verify Node and Npm version
