@@ -208,6 +208,10 @@ npx create-vite@latest basic-app --template react
 # To open the browser and run your first app
 ```
 
+App successful run will show this webpage in browser:
+
+![Alt Text](public/media/app_output.png)
+
 ## Challenge Setup Git and commit your first code
 
 ### Check and update Git in wsl
