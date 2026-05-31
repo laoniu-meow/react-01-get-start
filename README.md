@@ -220,10 +220,6 @@ sudo apt update             # update the envinronment
 sudo apt install git -y     # update latest Git version
 ```
 
-### Generate an SSH key for connecting to GitHub
-
-[Click this link to learn how to generate SSH key](https://github.com/laoniu-meow/git-02-generate-key-configuration)
-
 ### Create new repository at GitHub
 1. Go to https://github.com/
 2. Create a new account (if not sign-up an account)
@@ -231,6 +227,10 @@ sudo apt install git -y     # update latest Git version
 4. Give it a name (e.g., basic-app)
 5. Do NOT initialize with README (important if you already have local files)
 6. Click Create repository
+
+### Generate an SSH key for connecting to GitHub
+
+[Click this link to learn how to generate SSH key](https://github.com/laoniu-meow/git-02-generate-key-configuration)
 
 ```bash
 # 1. Ensure navigate to the project directory, example:
@@ -256,7 +256,7 @@ git config --global core.autocrlf input
 git config --global --list
 
 # 6. Registers a remote repository URL
-git remote add origin git@<hostname>:<git username>/<repository>.git
+git remote add origin git@github.com:<change git username here>/basic-app.git
 
 # 7. Check the connected to remote repository
 git remote -v
