@@ -7,7 +7,7 @@ Before building applications with React.js, you’ll need to set up a proper dev
 
 [x] [Install node & npm](#install-node.js-and-npm)
 
-[x] [Install IDE: VS Code](#install-ide:-vs-code)
+[x] [Install IDE with VS Code](#install-ide-with-vs-code)
 
 ---
 
@@ -45,7 +45,7 @@ nvm ls-remote           # You should be find v24.16.0
 nvm install 24.16.0
 ```
 ```
-<h3>Output after execute the nvm install:</h3>
+Output after execute the nvm install:
 Downloading and installing node v24.16.0...
 Downloading https://nodejs.org/dist/v24.16.0/node-v24.16.0-linux-x64.tar.xz...
 ######################################################################################################################################################## 100.0%
@@ -66,7 +66,7 @@ nvm alias default 24    # Output: default -> 24 (-> v24.16.0)
 ```
 ---
 
-## Install IDE: VS Code
+## Install IDE with VS Code
 
 ### What is IDE?
 An IDE (Integrated Development Environment) is software that combines key developer tools—like a code editor, compiler, debugger, and version control—into one place. It makes writing, testing, and managing code faster and easier. Think of it as a single workspace for all your coding needs
