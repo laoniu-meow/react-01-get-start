@@ -17,7 +17,7 @@ Before building applications with React.js, you’ll need to set up a proper dev
 
 [x] [Create your first app](#create-your-first-app)
 
-[x] [Challenge: Ct](#create-your-first-app)
+[x] [Challenge Setup Git and commit your first code](#challenge-setup-git-and-commit-your-first-code)
 
 ---
 
@@ -206,4 +206,77 @@ npx create-vite@latest basic-app --template react
 
 # Then press Ctrl + click on the ➜  Local:   http://localhost:5173/
 # To open the browser and run your first app
+```
+
+## Challenge Setup Git and commit your first code
+
+### Check and update Git in wsl
+```bash
+# 1. Check the current Git version
+git --version       # Output: git version 2.x.x
+
+# 2. Highly recommended to use latets version
+sudo apt update             # update the envinronment
+sudo apt install git -y     # update latest Git version
+```
+
+### Generate an SSH key for connecting to GitHub
+
+[Click this link to learn how to generate SSH key](https://github.com/laoniu-meow/git-02-generate-key-configuration)
+
+### Create new repository at GitHub
+1. Go to https://github.com/
+2. Create a new account (if not sign-up an account)
+3. Click New to create new repository
+4. Give it a name (e.g., basic-app)
+5. Do NOT initialize with README (important if you already have local files)
+6. Click Create repository
+
+```bash
+# 1. Ensure navigate to the project directory, example:
+cd ~/practice-react/basic-app
+
+# 2. Initialize Git
+git init
+
+# 3. Create git usename and email
+git config --global user.name "your-username"
+git config --global user.email "your-email"
+
+# 4. Configure Line Ending  
+# Configuring end-of-line settings is important but often overlooked,
+# as it helps prevent inconsistencies and issues when working across different operating systems
+# For Windows user
+git config --global core.autocrlf true
+
+# or Mac or Linux user
+git config --global core.autocrlf input
+
+# 5. Verify default identity
+git config --global --list
+
+# 6. Registers a remote repository URL
+git remote add origin git@<hostname>:<git username>/<repository>.git
+
+# 7. Check the connected to remote repository
+git remote -v
+
+# 8. Check status
+git status
+
+# 9. Stage your changes and check the status
+git add .
+git status
+
+# 10. Commit changes
+git commit -m 'Add your commit message'
+
+# 11. Add git branch - main
+git branch -M main
+
+# 12. Check branch
+git branch
+
+# 13. Push code to remote repository with --set-upstream for the first commit
+git push --set-upstream origin main
 ```
