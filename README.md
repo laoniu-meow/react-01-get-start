@@ -104,6 +104,10 @@ node -v                     # Output: v24.15.0 - current installed version
 npm -v                      # Output: 11.12.1  - current installed version
 
 # Your environment did not show the version, which means Node is not yet installed
+# If your environment have not instal curl, run:
+sudo apt update
+sudo apt install curl
+
 # 3. Download and install NVM (Only for one-time)
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 
